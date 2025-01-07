@@ -27,9 +27,15 @@ email: leeyongjun604@gmail.com
 github_username:  daniel-604
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+
+remote_theme: jekyll/minima
+
+minima:
+  skin: auto
 
 markdown: kramdown
 kramdown:

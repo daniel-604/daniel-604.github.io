@@ -13,7 +13,7 @@ categories: PS CODEFORCES
 #### TODO
 - [x] Pretendard
 - [x] LaTex
-- [ ] dark mode
+- [x] dark mode
 - [ ] google analytics
 - [ ] pagination
 - [ ] highlighting styles
