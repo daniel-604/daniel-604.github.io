@@ -7,8 +7,7 @@ categories: PS CODEFORCES
 
 블로그를 만들었습니다 !   
 아마 PS에 관한 내용이 주를 이룰 듯합니다.   
-감사합니다.  
-
+감사합니다.
 
 #### TODO
 - [x] Pretendard
