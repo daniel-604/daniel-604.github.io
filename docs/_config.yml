@@ -5,10 +5,7 @@ author:
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
-# description: >
-#   Write an awesome description for your new site here. You can edit this line
-#   in _config.yml. It will appear in your document head meta (for Google search
-#   results) and in your feed.xml site description.
+description: >
 
 # Build settings
 
@@ -20,10 +17,14 @@ author:
 # add a line comment on "theme: minima" above.
 #remote_theme: jekyll/minima
 
+paginate: 7
+paginate_path: "/page:num/"
+
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-paginate
 
 remote_theme: jekyll/minima
 
@@ -60,12 +61,12 @@ minima:
   #date_format: "%b-%d-%Y"
 
   # Generate social links in footer.
-  social_links:
+  # social_links:
   #  - { platform: devto,          user_url: "https://dev.to/jekyll" }
   #  - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
   #  - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
   #  - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-   - { platform: github,         user_url: "https://github.com/daniel-604" }
+  #  - { platform: github,         user_url: "https://github.com/daniel-604" }
   #  - { platform: gitlab,         user_url: "https://gitlab.com/jekyll" }
   #  - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
   #  - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
