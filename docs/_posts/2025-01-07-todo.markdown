@@ -16,5 +16,6 @@ categories: PS CODEFORCES
 - [x] LaTex
 - [x] dark mode
 - [ ] google analytics
-- [ ] pagination
-- [ ] highlighting styles
+- [x] pagination
+- [x] highlighting styles
+- [ ] comment
