@@ -20,6 +20,8 @@ description: >
 paginate: 7
 paginate_path: "/page:num/"
 
+google_analytics: G-KTJY6NVPFP
+
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
@@ -61,12 +63,12 @@ minima:
   #date_format: "%b-%d-%Y"
 
   # Generate social links in footer.
-  social_links:
+  # social_links:
   #  - { platform: devto,          user_url: "https://dev.to/jekyll" }
   #  - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
   #  - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
   #  - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-   - { platform: github,         user_url: "https://github.com/daniel-604" }
+  #  - { platform: github,         user_url: "https://github.com/daniel-604" }
   #  - { platform: gitlab,         user_url: "https://gitlab.com/jekyll" }
   #  - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
   #  - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }

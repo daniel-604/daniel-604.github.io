@@ -18,4 +18,5 @@ categories: PS CODEFORCES
 - [ ] google analytics
 - [x] pagination
 - [x] highlighting styles
-- [ ] comment
+- [x] comment   
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
