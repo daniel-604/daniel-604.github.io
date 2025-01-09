@@ -7,7 +7,7 @@ categories: PS
 
 2024 ICPC Asia Seoul Regional에 참여하였습니다.
 
-![missed balloon](https://raw.githubusercontent.com/daniel-604/daniel-604.github.io/refs/heads/main/docs/assets/images/missed_balloon.jpeg){: width="80%" height="80%"}  
+![missed balloon](https://raw.githubusercontent.com/daniel-604/daniel-604.github.io/refs/heads/main/docs/assets/images/missed_balloon.jpeg)
 (누군가 놓친 풍선..)  
 
 대회가 끝난지는 꽤 지났지만 좋은 분들과 즐겁게 대회를 준비했기에 남겨두고자 짧은 후기를 작성합니다.  
@@ -18,7 +18,7 @@ categories: PS
 제가 합류가 다소 늦었기에 첫 팀연습은 10월 2일부터 시작했습니다. 예선까지 4번, 본선까지 총 8번의 연습을 진행하였습니다.  
 
 
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;시간, Solved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+| Contest | 시간, Solved |
 |:--------:|:--------:|
 | CERC 2015 | 3시간, 4/12 |
 | PACNW 2015 | 3시간, 3/11 |
@@ -28,6 +28,8 @@ categories: PS
 | [jakarta 2023] | 5시간, 7/13 |
 | [CERC 2020] | 5시간, 6/11 |
 | [CERC 2014] | 5시간, 6/12 |
+| <img width=500/> | <img width=500/> |
+
 
 
 연습을 진행할수록 아이디어 교환도 잘되고, 이를 쌓아가는 과정이 매끄러워졌습니다. 못 풀 것 같던 문제도 다같이 머리를 맞대어 풀 때마다 도파민이 과다 분출되곤 했습니다. 재찬이형(<a style="color:#FF8C00" href = "https://codeforces.com/profile/dlwocks31">dlwocks31</a>)은 구현이 빠르고 정확하며, 동현이형(<a style="color:#FF8C00" href = "https://codeforces.com/profile/diordhd">diordhd</a>)은 날카로운 아이디어를 자주 제시했기에 (저는 이도 저도 아닙니다.) 밸런스가 상당히 좋았다고 생각합니다. 쉬운 문제는 각자 해결하고, 논의가 필요한 문제는 같이 아이디어를 고민하여 주로 재찬이형이 구현하는 식으로 진행했습니다. 본선 직전에는 꽤나 자신감이 붙었고, 어쩌면 좋은 결과가 있을 수도 있겠다는 희망을 품고 고양으로 향했습니다. (인터넷 예선은 생략합니다)
