@@ -18,9 +18,9 @@ categories: PS
 제가 합류가 다소 늦었기에 첫 팀연습은 10월 2일부터 시작했습니다. 예선까지 4번, 본선까지 총 8번의 연습을 진행하였습니다.  
 
 
-| Contest | 시간, Solved|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;시간, Solved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:--------:|:--------:|
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CERC 2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3시간, 4/12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| CERC 2015 | 3시간, 4/12 |
 | PACNW 2015 | 3시간, 3/11 |
 | [TOPC 2022] | 3시간, 5/9 |
 | [TOPC 2024] | 3시간, 8/12 | 
