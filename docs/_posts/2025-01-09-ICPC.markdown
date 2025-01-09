@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "2024 ICPC Asia Seoul Regional"
+date:   2025-01-08 23:12:00 +0900
+categories: PS
+---
+
+2024 ICPC Asia Seoul Regional에 참여하였습니다.
+
+![마살](http://daniel-604.github.io/blog/assets/images/marshall/1.png)
+
+늦었지만 꼭 남기고 싶기에 후기를 작성해봅니다.  
+팀원은 [dlwocks31], [diordhd], [daniel604] 이렇게 참여하였습니다.  
+
+
+[dlwocks31]: https://codeforces.com/profile/dlwocks31
+[diordhd]: https://codeforces.com/profile/diordhd
+[daniel604]: https://codeforces.com/profile/daniel604
