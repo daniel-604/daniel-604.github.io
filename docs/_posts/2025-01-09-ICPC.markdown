@@ -7,12 +7,49 @@ categories: PS
 
 2024 ICPC Asia Seoul Regional에 참여하였습니다.
 
-![마살](http://daniel-604.github.io/blog/assets/images/marshall/1.png)
+![missed balloon](https://raw.githubusercontent.com/daniel-604/daniel-604.github.io/refs/heads/main/docs/assets/images/missed_balloon.jpeg){: width="80%" height="80%"}  
+(누군가 놓친 풍선..)  
 
-늦었지만 꼭 남기고 싶기에 후기를 작성해봅니다.  
-팀원은 [dlwocks31], [diordhd], [daniel604] 이렇게 참여하였습니다.  
+대회가 끝난지는 꽤 지났지만 좋은 분들과 즐겁게 대회를 준비했기에 남겨두고자 짧은 후기를 작성합니다.  
+팀원은 [dlwocks31], [diordhd], [daniel604]로 참여하였습니다. [dlwocks31]과 [diordhd]는 같이 과거 ICPC에 참여한 경험이 있고, 올해는 제가 합류하였습니다. 두 분은 팀대회 경험도, PS 경험도 풍부하기에 많이 배울 수 있었습니다. 지원 당시에 모두 코드포스 CM이었기에 **BORADAN**이라는 팀명으로 참여하였습니다.
+<br><br>
 
+### 팀연습
+제가 합류가 다소 늦었기에 첫 팀연습은 10월 2일부터 시작했습니다. 예선까지 4번, 본선까지 총 8번의 연습을 진행하였습니다.  
+
+|  <center>Contest</center> |  <center>시간, Solved</center> |
+|:--------:|:--------:|
+| CERC 2015 | 3시간, 4/12 |
+| PACNW 2015 | 3시간, 3/11 |
+| [TOPC 2022] | 3시간, 5/9 |
+| [TOPC 2024] | 3시간, 8/12 | 
+| [NCPC 2024] | 5시간, 6/11 |
+| [jakarta 2023] | 5시간, 7/13 |
+| [CERC 2020] | 5시간, 6/11 |
+| [CERC 2014] | 5시간, 6/12 |
+
+연습을 진행할수록 아이디어 교환도 잘되고, 이를 쌓아가는 과정이 매끄러워졌습니다. 못 풀 것 같던 문제도 다같이 머리를 맞대어 풀 때마다 도파민이 과다 분출되곤 했습니다. 재찬이형([dlwocks31])은 구현이 빠르고 정확하며, 동현이형([diordhd])은 날카로운 아이디어를 자주 제시했기에 (저는 이도 저도 아닙니다.) 밸런스가 상당히 좋았다고 생각합니다. 쉬운 문제는 각자 해결하고, 논의가 필요한 문제는 같이 아이디어를 고민하여 주로 재찬이형이 구현하는 식으로 진행했습니다. 본선 직전에는 꽤나 자신감이 붙었고, 어쩌면 좋은 결과가 있을 수도 있겠다는 희망을 품고 고양으로 향했습니다. (인터넷 예선은 생략합니다)
+<br><br>
+
+### 본선
+대회 전날 킨텍스 근처의 숙소에서 하룻밤 묵었으며 예비소집 후 저녁 식사 후에 팀연습을 복기했습니다. 연습 중 풀었던 플레 상위 문제, 끝나고 업솔빙 했던 문제들의 아이디어들을 정리했습니다. 잠들기 전에는 다이아 문제 하나를 잡고 다같이 고민하다가 잠에 들었습니다.
+<br><br>
+
+![scoreboard](https://raw.githubusercontent.com/daniel-604/daniel-604.github.io/refs/heads/main/docs/assets/images/2024_icpc_scoreboard.png)  
+
+기대가 컸던 탓일지 대회 결과가 만족스럽지 못했습니다. 시간이 꽤 지나서 타임라인을 기억하지는 못하지만 초반 문제들을 풀면서 꽤나 말렸습니다. 특히 F는 잘못된 풀이를 충분히 확인하지 않고 제출하여 멘붕이 왔던 걸로 기억합니다. 어찌저찌 풀어낸 후에 C, K를 풀어보기로 결정하였지만 시간이 얼마 남지 않았고, 둘 다 풀어야 가능성이 있음을 알고 두 개를 같이 잡는 전략을 택했습니다. 그 결과는 스코어보드에서 보실 수 있습니다.  
+대회가 끝난 후에도 미련이 남아 결과를 발표하는 동안 C, K를 고민했고, 대회 중 답에 근접했음을 확인하고 아쉬움이 남았습니다.
+<br><br>
+
+### 마무리
+이번 ICPC는 졸업을 앞둔 재찬이형과 동현이형에게 마지막이었으며 같이 팀을 이룰 수 없게 되었습니다. (동현이형과는 25년 UCPC까지 같이 나갈 수 있습니다!) 합이 잘 맞았다고 생각했기에 이번 대회의 결과보다 더이상 같이 대회에 참여할 수 없다는 점이 더 아쉬운 것 같습니다. 지난 학기에 전공 수업이 많아 과제와 시험에 치여 살았는데 매주 하던 팀연습 덕분에 즐겁게 보낼 수 있었습니다. 재찬이형과 동현이형의 앞날에 좋은 일만 가득하길 응원합니다!
 
 [dlwocks31]: https://codeforces.com/profile/dlwocks31
 [diordhd]: https://codeforces.com/profile/diordhd
 [daniel604]: https://codeforces.com/profile/daniel604
+[TOPC 2022]: https://codeforces.com/gym/103990/standings/participant/194411119#p194411119
+[TOPC 2024]: https://codeforces.com/gym/105383/standings/participant/195022013#p195022013
+[NCPC 2024]: https://codeforces.com/gym/105431/standings/participant/195826862#p195826862
+[jakarta 2023]: https://codeforces.com/contest/1906/standings/participant/196421337#p196421337
+[CERC 2020]: https://codeforces.com/gym/104713/standings/participant/197111192#p197111192
+[CERC 2014]: https://codeforces.com/gym/100543/standings/participant/197350502#p197350502
