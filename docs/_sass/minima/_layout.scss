@@ -287,6 +287,9 @@
   h6 {
     @include relative-font-size(1.0625);
   }
+  p {
+	line-height: 2.25;
+  }
 }
 
 
