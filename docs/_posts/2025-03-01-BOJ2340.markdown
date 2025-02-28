@@ -1,0 +1,116 @@
+---
+layout: post
+title:  "BOJ 2340"
+date:   2025-03-01 01:11:00 +0900
+categories: PS
+---
+
+오랜만에 진득하게 고민해서 문제를 풀어보았습니다.
+
+웬만하면 두어시간 고민하고 풀이를 보는 편이지만 풀이가 없어서 볼 수 없었습니다..  
+겨우 풀고 풀이를 작성해봅니다.
+
+### 문제
+[이진 수열 회전]  
+길이 $N$ 의 이진 수열을 회전시켜 총 $N$ 개의 수열을 만듭니다. 이를 사전순으로 정렬하고, 가장 마지막 숫자들로 새로운 수열을 얻습니다. 이때 원래의 수열을 구하는 것이 문제입니다.  
+회전시킨 문자열의 마지막 문자를 붙여 문자열을 만드는 변환을 BWT([Burrows–Wheeler transform]) 이라고 부르며 문제는 이진 수열에서 역변환을 $O(N^2)$ 보다 빠르게 구하면 됩니다.
+
+### 풀이
+입력으로 주어지는 수열을 $S$, 정답을 $A$ 로 두겠습니다. 당연히도 두 수열 모두 길이는 $N$ 입니다.  
+가장 먼저 떠올릴 수 있는 부분은 어떤 수열 $A$ 가 정답이 될 수 있는지 판별하는 방법입니다. $A$ 를 두 번 이어붙여 길이 $2N$ 의 수열에서 접미사 배열을 구하면 $A_0, ..., A_{N - 1}$ 에서 시작하는 수열들을 정렬할 수 있으며 BWT를 $O(NlogN)$ 에 구하게 됩니다. ( 접미사 배열 설명: [koosaga님의 블로그] ) 이제 가능한 $A$ 를 구하고, BWT를 구하여 $S$ 와 일치하면 출력하고, 일치하지 않는다면 -1을 출력하면 됩니다.  
+
+다음으로 할 수 있는 관찰은 $S_0 = A_{N - 1}$ 이라는 점입니다. $A$ 는 회전시킨 수열들 중 가장 앞서는 문자열이므로, $A$ 의 마지막 문자가 $S$ 의 첫 번째 문자가 됩니다. 이제 수열 $A = A_0\, A_1\, ...\, A_{N - 2}\, S_0$ 가 됩니다.  
+
+가장 중요한 부분으로, $A_{N - 2}$ 를 구해보겠습니다. $S$ 를 구할 때에 $A$ 를 오른쪽으로 한 번 회전 시킨 수열 $A' = S_0\, A_0\, ... \, A_{N - 2}$ 또한 포함되어 있습니다. 앞서 말했듯, $A$ 는 회전시킨 수열들 중 가장 앞서는 문자열이기 때문에 $A'$ 은 $S_0$ 으로 시작하는  수열들 중 사전순으로 가장 앞섭니다. $S_0$ 의 값에 따라 $A'$ 이 사전순으로 몇 번째에 위치하는지 알 수 있으며 해당 위치의 $S$ 의 값이 $A_{N - 2}$ 가 됩니다. 수식으로 나타내면 다음과 같습니다. 이때 $zcnt$ 는 $S$ 의 0의 개수입니다.
+
+$$ A'_{N-1} = A_{N - 2} = \begin{cases}
+    S_0 & \text{$S_0 = 0$} \\
+    S_{zcnt} & \text{$S_0 = 1$} \\
+  \end{cases}
+$$
+
+$S_0 = 0$ 인 경우 $A'$ 이 모든 회전 수열들 중 가장 앞섭니다. $S_0 = 1$ 인 경우 $0$ 으로 시작하는 수열을 제외하고 가장 앞서므로 $zcnt$ 번째로 앞섭니다. (zero-based)  
+
+위의 과정을 바탕으로, 어떤 수열 $T$ 가 사전순으로 몇 번째에 위치하는지 안다면, 이를 오른쪽으로 한 번 회전시킨 수열 $T'$ 이 몇 번째로 앞서는지 구할 수 있습니다. 수열들을 사전순으로 보았을 때, $T_{N-1}=0$ 이라면 $T'$ 은 앞서 $0$ 으로 끝나는 수열들의 바로 다음에 순서에 위치합니다. 동일하게 $T_{N-1}=1$ 이라면 앞서 $1$ 으로 끝나는 수열들의 바로 다음에 위치합니다. 만약 $0$ 으로 끝나는 첫 수열이라면 0번째, $1$ 으로 끝나는 첫 수열이라면 $zcnt$ 번째에 위치합니다. 구현에서는 `solve` 함수 첫 부분에 배열 $t$ 를 채우는 부분입니다.
+
+$A$ 를 역순으로 구성하고, BWT가 $S$ 와 일치하는지 확인하면 됩니다. 접미사 배열은 [koosaga님의 구현] 을 변수명만 수정하여 사용하고 있습니다.
+
+{% highlight cpp %}
+#include <bits/stdc++.h>
+using namespace std;
+
+int N;
+string S;
+int t[50000];
+
+// https://gist.github.com/koosaga/44532e5dec947132ee55da0458255e05
+vector<int> getSuffixArray(string& s) {
+  int m = 255;
+  const int n = s.size();
+  int t = 1;
+  vector<int> group(n + 1), sfx(n), newGroup(n + 1), nxtord(n + 1);
+  int cnt[max(m, n) + 1];
+	
+  for(int i = 0; i < n; ++i) group[i] = s[i];
+	
+  int pt = 1;
+  while (true) {
+    memset(cnt, 0, sizeof(cnt));
+    for (int i = 0; i < n; ++i) ++cnt[group[min(i + t, n)]];
+    for (int i = 1; i <= n || i <= m; ++i) cnt[i] += cnt[i - 1];
+    for (int i = 0; i < n; ++i) nxtord[--cnt[group[min(i + t, n)]]] = i;
+
+    memset(cnt, 0, sizeof(cnt));
+    for (int i = 0; i < n; ++i) ++cnt[group[i]];
+    for (int i = 1; i <= n || i <= m; ++i) cnt[i] += cnt[i - 1];
+    for (int i = n - 1; i >= 0; --i) sfx[--cnt[group[nxtord[i]]]] = nxtord[i];
+
+    if(pt == n) break;
+    pt = 1; newGroup[sfx[0]] = 1;
+    for (int i = 1; i < n; ++i){
+      if (group[sfx[i - 1]] != group[sfx[i]] ||
+	  group[min(sfx[i - 1] + t, n)] != group[min(sfx[i] + t, n)]) ++pt;
+        newGroup[sfx[i]] = pt;
+      }
+    group = vector<int>(newGroup.begin(), newGroup.end());
+    t *= 2;
+  }
+  return sfx;
+}
+
+void solve() {
+  cin >> N >> S;
+  int zcnt = 0;
+  for (int i = 0; i < N; ++i) if (S[i] == '0') ++zcnt;
+  int zcur = 0, ocur = zcnt;
+  for (int i = 0; i < N; ++i) {
+    if (S[i] == '0') t[i] = zcur++;
+    else t[i] = ocur++;
+  }
+  int cur = 0;
+  string A;
+  for (int i = 0; i < N; ++i) {
+    A += S[cur];
+    cur = t[cur];
+  }
+  reverse(A.begin(), A.end());
+  string tA = A; tA += A;
+  auto sfx = getSuffixArray(tA);
+  string tmp;
+  for (auto i: sfx) if (i < N) tmp += tA[i + N - 1];
+  if (tmp != S) cout << -1;
+  else cout << A;
+}
+
+int main() {
+  ios::sync_with_stdio(0); cin.tie(0);
+  solve();
+}
+{% endhighlight %}
+
+항상 풀 때는 어렵지만, 풀고 나면 쉽게 느껴지는 것 같습니다...
+
+[이진 수열 회전]: https://www.acmicpc.net/problem/2340
+[Burrows–Wheeler transform]: https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_trAform
+[koosaga님의 블로그]: https://koosaga.com/125
+[koosaga님의 구현]: https://gist.github.com/koosaga/44532e5dec947132ee55da0458255e05
