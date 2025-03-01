@@ -111,6 +111,6 @@ int main() {
 항상 풀 때는 어렵지만, 풀고 나면 쉽게 느껴지는 것 같습니다...
 
 [이진 수열 회전]: https://www.acmicpc.net/problem/2340
-[Burrows–Wheeler transform]: https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_trAform
+[Burrows–Wheeler transform]: https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform
 [koosaga님의 블로그]: https://koosaga.com/125
 [koosaga님의 구현]: https://gist.github.com/koosaga/44532e5dec947132ee55da0458255e05
