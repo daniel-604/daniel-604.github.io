@@ -11,7 +11,7 @@ categories: PS
 $N, M$개의 정점이 있는 이분 그래프에 $N+M-1$개의 간선을 배치하여 모든 정점 간의 거리의 합이 최소가 되도록 하는 문제입니다. 이때 연결그래프여야 하며, 간선끼리 겹치면 안된다는 조건이 있으므로 특수한 형태의 그래프만 가능합니다.
 
 ### 분석
-![graph](https://raw.githubusercontent.com/daniel-604/daniel-604.github.io/refs/heads/main/docs/assets/images/BOJ_19545.png)
+![graph](https://raw.githubusercontent.com/daniel-604/daniel-604.github.io/refs/heads/main/assets/images/BOJ_19545.png)
 
 위의 정점에서 아래의 정점으로 간선을 잇는다고 생각하면 연속한 구간의 정점들에 연결되어야 하며, 구간끼리는 양끝점이 겹쳐야 합니다. 다시 말해, 위의 $i$번 정점에서 아래의 $s_i$부터 $e_i$까지 간선을 만든다면 아래의 조건을 만족해야 합니다.
 
